@@ -1,0 +1,52 @@
+<%= form_with(model: airport, local: true) do |form| %>
+  <% if airport.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(airport.errors.count, "error") %> prohibited this airport from being saved:</h2>
+
+      <ul>
+      <% airport.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country_id %>
+    <%= form.text_field :country_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wiki %>
+    <%= form.text_field :wiki %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Isocode %>
+    <%= form.text_field :Isocode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long %>
+    <%= form.text_field :long %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latt %>
+    <%= form.text_field :latt %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

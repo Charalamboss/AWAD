@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  country: one
+  city: one
+  wiki: MyString
+  Isocode: MyString
+  long: MyString
+  latt: MyString
+
+two:
+  name: MyString
+  country: two
+  city: two
+  wiki: MyString
+  Isocode: MyString
+  long: MyString
+  latt: MyString
